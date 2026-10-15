@@ -38,7 +38,7 @@ if st.button("🚀 Generar Video"):
     if prompt:
         with st.spinner("Conectando con el motor de video en PiAPI... Esto puede tomar unos momentos."):
             try:
-                # Obtener la llave secreta configurada en Streamlit de forma segura
+                # Obtener la llave secreta configurada de forma segura
                 api_key = st.secrets["PIAPI_API_KEY"]
                 
                 # Configuración de la petición a la API de PiAPI con el header oficial
