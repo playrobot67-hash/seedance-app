@@ -31,10 +31,10 @@ if st.button("🚀 Generar Video"):
                 # Obtener la llave secreta configurada en Streamlit
                 api_key = st.secrets["PIAPI_API_KEY"]
                 
-                # Configuración de la petición a la API de PiAPI con autenticación corregida
+                # Configuración de la petición a la API de PiAPI con Bearer Token
                 url = "https://api.piapi.ai/api/v1/task"
                 headers = {
-                    "x-api-key": api_key,
+                    "Authorization": f"Bearer {api_key}",
                     "Content-Type": "application/json"
                 }
                 payload = {
